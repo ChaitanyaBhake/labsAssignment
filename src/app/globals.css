@@ -24,3 +24,27 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes ping {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+.animate-ping {
+  animation: ping 2s infinite;
+}
+
+.delay-200 {
+  animation-delay: 0.5s;
+}
+
+.delay-400 {
+  animation-delay: 1s;
+}
+
